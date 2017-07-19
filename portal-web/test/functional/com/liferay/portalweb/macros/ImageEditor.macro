@@ -15,7 +15,7 @@
 		<execute macro="ImageEditor#_saveFile" />
 	</command>
 
-	<command name="cancel Changes">
+	<command name="cancelChanges">
 		<execute function="AssertClick" locator1="Button#CANCEL_EFFECTS" value1="Cancel" />
 	</command>
 
@@ -49,6 +49,8 @@
 		<execute function="Click" locator1="DocumentsAndMedia#ICON_DOCUMENT_VERTICAL_ELLIPSIS" />
 
 		<execute function="AssertClick" locator1="MenuItem#EDIT_WITH_IMAGE_EDITOR" value1="Edit With Image Editor" />
+
+		<execute macro="IFrame#selectConfigurationFrame" />
 	</command>
 
 	<command name="gotoImageEditorViaItemSelector">
